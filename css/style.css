@@ -1,0 +1,65 @@
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+img {vertical-align: top;}
+body {font-family: 'SUIT Variable'; color: #333;}
+ul::after {content: ""; clear: both; display: block;}
+.wrap {width: 1000px; margin: 0 auto; position: relative;}
+.blind {font-size: 0; width: 0; height: 0; position: absolute; left: -99999px; overflow: hidden;}
+/* .blank {height: 160px;} */
+
+header {background: #ffffff; height: 160px;}
+header h1 {padding-top: 30px;}
+header h1 a {width: 100px;}
+
+header .snb {position: absolute; top: 0; right: 0;}
+header .snb li {float: left; margin-left: 26px; line-height: 80px; font-size: 14px;}
+
+header .gnb {font-size: 16px; font-weight: 900; position: absolute; top: 80px; right: 0;}
+header .gnb li {float: left; margin-left: 40px; line-height: 80px;}
+header .gnb li a { color: #000; transition: 0.3s;}
+header .gnb li a:hover, header .gnb li a:focus {color: #f00;}
+
+#main {background: #eee; width: 100%; height: 480px;}
+
+#main .wrap {height: 480px;}
+#main .wrap article {padding-top: 110px; position: absolute; top: 0; left: 0;}
+#main .wrap article p {color: #000;}
+#main .wrap article h3 {margin: 20px 0 44px; font-size: 40px; color: #000; font-weight: 700; }
+#main .wrap article span {font-size: 14px; line-height: 1.6;}
+
+#main .wrap a {display: flex; justify-content: center;}
+#main .wrap ul {position: absolute; bottom: 30px; left: calc(50% - 57px);}
+#main .wrap ul li {float: left;}
+#main .wrap ul li a {background: #ffffff; width: 8px; height: 8px; border-radius: 20px; margin: 0 15px; text-indent: -999px; overflow: hidden; display: block;}
+#main .wrap ul li.select a {background: #000000;}
+
+strong {display: block; font-weight: 900; color: #000; padding: 40px 0 30px;}
+#cur .list1 ul li {float: left; margin-right: 50px;}
+#cur .list1 ul li:last-child {margin-right: 0px;}
+#cur .list1 ul li a p {padding: 28px 0 16px; font-size: 16px; color: #000; font-weight: bold;}
+#cur .list1 ul li a span {padding-bottom: 30px; font-size: 14px; line-height: 1.8; color: #666; display: block; border-bottom: 3px solid #000;}
+
+#act .list2 ul li {float: left;  font-size: 14px; color: #666; margin-left: 50px; width: 300px; height: 260px; border-bottom: 1px solid #000; box-sizing: border-box;}
+#act .list2 ul li:first-child {margin-left: 0; width: 650px; border: none;}
+#act .list2 ul li:first-child strong {position: relative; z-index: 10;}
+#act .list2 ul li a img { position: relative; top: -22px; }
+#act .list2 ul li p {margin-bottom: 10px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+
+#info .list3 ul li {float: left; margin-left: 50px; width: 300px; height: 200px; border-bottom: 1px solid #eee; margin-bottom: 100px; box-sizing: border-box;}
+#info .list3 ul p {line-height: 1.4; white-space: nowrap; font-size: 14px; color: #666;}
+#info .list3 ul a {text-decoration: underline; color: #000; display: block; padding-top: 30px;}
+#info .list3 ul li:first-child {margin-left: 0;}
+
+footer {background: #000; height: 165px;}
+footer .link li {float: left; color: #999; font-size: 14px; padding-top: 50px; margin-bottom: 20px;}
+footer .link li::after {content: "|"; margin: 0 14px;}
+footer .link li:last-child::after {content: none; margin: 0}
+footer .add1, footer .add2 {color: #666; font-size: 12px;} 
+footer .add1 li , footer .add2 li {float: left; line-height: 1.6;}
+footer .add1 li::after , footer .add2 li::after {content: "|"; margin: 0 5px;}
+footer .add1 li:last-child::after , footer .add2 li:last-child::after {content: none; margin: 0;}
+
+footer .sns {position: absolute; top: 40px; right: 0;}
+footer .sns li {color: #fff; display: flex; justify-content: right; margin: 7px 0;}
